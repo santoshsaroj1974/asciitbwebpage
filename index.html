@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AWP</title>
+<style>
+
+body{
+font-family: 'Segoe UI', sans-serif;
+margin:0;
+background:#f5f7fa;
+}
+
+header{
+background:#002147;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+}
+.namaste {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+.namaste img {
+    height: 100px;
+    width: auto;
+}
+
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:10px;
+font-weight:400;
+}
+
+nav a:hover{
+color:#ffc107;
+}
+
+.banner{
+background:#004080;
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+
+.banner h1{
+margin:0;
+font-size:40px;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:40px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:28px;
+margin-bottom:30px;
+color:#002147;
+}
+
+/* People */
+
+.People{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.People-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.People-card h3{
+margin-top:10px;
+color:#004080;
+}
+
+/* Staff */
+
+.forms-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.forms-card{
+background:white;
+padding:20px;
+border-radius:8px;
+text-align:center;
+box-shadow:0 3px 12px rgba(0,0,0,0.1);
+}
+
+.forms-card img{
+width:90px;
+height:90px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+.forms-card h4{
+margin:5px 0;
+color:#002147;
+}
+
+.forms-card p{
+margin:2px;
+font-size:14px;
+color:#555;
+}
+
+/* Contact */
+
+.contact{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.center-transparent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7; /* 20% transparency */
+  width: 30%; /* Optional: adjust size */
+}
+/* Navbar style link button */
+.navbar {
+    list-style: none;
+    display: flex;
+    background: #2c3e50;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #34495e;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #34495e;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    min-width: 200px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+    <img src="img/IITB-LL.png" alt="IITBL">
+</div>
+</div>
+
+	<nav>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="">People ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="peo.html">Deputy Registrars(HR-1)</a></li>
+                <li><a href="vs.html">Deputy Registrars(HR-2)</a></li>
+            </ul>
+        </li>
+
+        <li><a href="Formspdf.html">Forms</a></li>
+        
+    </ul>
+</nav>
+
+
+
+</header>
+
+<div class="banner">
+<h1>Administration Web Portal</h1>
+
+</div>
+<div class="namaste">
+    <img src="img/Admin.png" alt="namaste" align='Center'>
+</div>
+
+
+<h5 class="section-title" id="staff">Welcome to the Administration Staff Information Web Portal.<br>This platform serves as a centralized repository for the profile details of Assistant Registrars, Deputy Registrars, and all administrative staff.</h5>
+
+</div>
+<br>
+<br>
+<div class="FB">
+    <img src="img/MB.png" class="center-transparent" alt="FB">
+
+</div>
+
+</div>
+<footer>
+© 2026 Office Staff Portal | Designed for Office Administration
+</footer>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AWP</title>
+<script>
+function goToPage() {
+    var select = document.getElementById("courseSelect");
+    var url = select.value;
+
+    if (url) {
+        window.location.href = url;
+    }
+}
+</script>
+<script>
+    const img = document.getElementById("profileImg");
+    const popup = document.getElementById("popup");
+    const close = document.querySelector(".close");
+
+    // Show popup
+    img.onclick = function() {
+        popup.style.display = "block";
+    }
+
+    // Close popup
+    close.onclick = function() {
+        popup.style.display = "none";
+    }
+
+    // Close when clicking outside
+    window.onclick = function(e) {
+        if (e.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+</script>
+
+<style>
+
+body{
+font-family: 'Segoe UI', sans-serif;
+margin:0;
+background:#f5f7fa;
+}
+
+header{
+background:#002147;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+}
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ffc107;
+}
+
+.banner{
+background:#004080;
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+
+.banner h1{
+margin:0;
+font-size:40px;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:40px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:28px;
+margin-bottom:30px;
+color:#002147;
+}
+
+/* Departments */
+
+.departments{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.department-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.department-card h3{
+margin-top:10px;
+color:#004080;
+}
+
+/* Staff */
+
+.staff-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.staff-card{
+background:white;
+padding:1px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 12px rgba(0,0,0,0.1);
+}
+
+.staff-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+.staff-card h4{
+margin:5px 0;
+color:#002147;
+}
+
+.staff-card p{
+margin:2px;
+font-size:14px;
+color:#555;
+}
+
+/* Contact */
+
+.contact{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* Footer */
+
+footer{
+background:#002147;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+/* Navbar style link button */
+.navbar {
+    list-style: none;
+    display: flex;
+    background: #2c3e50;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #34495e;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #34495e;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    min-width: 200px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+}
+.staff-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Popup background */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Popup box */
+.popup-content {
+    background: #fff;
+    width: 300px;
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Close button */`
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+    <img src="img/IITB-LL.png" alt="IITBL">
+</div>
+
+<nav>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="">People ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="peo.html">Deputy Registrars(HR-1)</a></li>
+                <li><a href="vs.html">Deputy Registrars(HR-2)</a></li>
+            </ul>
+        </li>
+
+        <li><a href="Formspdf.html">Forms</a></li>
+      
+    </ul>
+</nav>
+
+</header>
+<div class="banner">
+<h2>Administration Staff (HR-1)</h2>
+
+</div>
+<div class="container">
+<div class="departments">
+<div class="department-card">
+<div class="staff-card">
+<img src="img/sasp.png">
+<h4>Ms. Saswati Roy</h4>
+<p>Deputy Registrar</p>
+<p>Email:sh.staff.emp[at]iitb.ac.in</p>
+<p>Phone:(022) 2576 8949 </p>
+
+<a href="sasp.html">
+  <img src="img/button8.png" alt="Clickable Button Image" style="width:100px;height:40px;">
+</a>
+</div>
+</div>
+</div>
+<br>
+<div class="container">
+<div class="departments">
+
+<div class="department-card">
+
+<div class="staff-card">
+<img src="img/Sampada.jpeg">
+<h4>Ms.Sai Prasad Navalkar</h4>
+<p>Assistant Registrar</p>
+<p>Establishment Unit (Group 'B', & ‘C’) and Promotion of Group A (Officers), Group B & Group C</p>
+<p>Phone No:&nbsp;4056</p>
+<p>E-Mail:  uic.estt.staff@iitb.ac.in</p>
+</div>
+</div>
+<div class="department-card">
+<div class="staff-card">
+<img src="img/Ravi_Ray.jpeg">
+
+<h4>Shri Ravi Ray</h4>
+<p>Assistant Registrar</p>
+<p>Establishment Unit [Group A (officers)] </p>
+<p>Phone No:&nbsp;7930</p>
+<p>E-Mail: uic.estt.officer@iitb.ac.in</p>
+
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="staff-grid">
+<div class="staff-card">
+<img src="img/PrachiK.jpeg">
+
+<h4>Ms. Prachi Kumbhare</h4>
+<p>Administrative Superintendent</p>
+<p> Establishment activities  of Group 'B' and 'C' Staff </p>
+<p>Phone No:&nbsp;6010</p>
+<p>E-Mail:pumredkar@iitb.ac.in</p>
+<a href="Prachip.html">
+  <img src="img/button9.png" alt="Clickable Button Image" style="width:90px;height:20px;" align="center">
+</a>
+</div>
+
+<div class="staff-card">
+<img src="img/Anupama_Agi.jpeg">
+<h4>Ms. Anupama Agi</h4>
+<p>Administrative Superintendent</p>
+<p> Establishment activities  of Group C (Support Cadre)</p>
+<p>Phone No:&nbsp;4024</p>
+<p>E-Mail:anuagi@iitb.ac.in</p>
+</div>
+
+
+ <div class="staff-card" w-75">
+<img src="img/Akshata Nandoskar.jpeg">
+<h4>Ms.Akshata Nandoskar</h4>
+<p>Jr. Administrative Assistant</p>
+<p>Dealing with Group C- Support cadre </p>
+<p>Phone No:&nbsp;6009</p>
+<p>E-Mail:sangeeta.chaudhary@iitb.ac.in&nbsp;</p>
+</div>
+
+<div class="staff-card">
+<img src="img/Madhura Shingade.jpeg">
+<h4>Ms.Madhura V Shingade</h4>
+<p>Administrative Assistant</p>
+<p>Dealing with Gr. B & C Administrative Cadre</p>
+<p>Phone No:&nbsp;4023</p>
+<p>E-Mail:madhura.shingade@iitb.ac.in</p>
+</div>
+
+<div class="staff-card">
+<img src="img/TKorgaonkar.jpeg">
+<h4>Ms. Tejswini Korgaonka</h4>
+<p>Jr. Administrative Assistant</p>
+<p>Gr. B & C Administrative Cadre :</p>
+<p>Phone No:&nbsp;6021</p>
+<p>10002303@iitb.ac.in</p>
+</div>
+
+<div class="staff-card">
+<img src="img/Jaya Karwanje.jpeg">
+<h4>Ms.Jaya Karwanje</h4>
+<p>Temp. Clerk Typist</p>
+<p>Group 'C' Support Cadre</p>
+<p>Phone No:&nbsp;4025</p>
+ <P>E-Mail: i05091@iitb.ac.in</p>
+</div>
+
+<div class="staff-card">
+<img src="img/Datta Kolekar.jpeg">
+<h4>Shri Datta Kolekar</h4>
+<p>Sr. Multi-skilled Assistant</p>
+<p>Support staff.</p>
+<p>Phone No:&nbsp;4023</p>
+</div>
+<div class="staff-card">
+<img src="img/Santosh Bharbhare.jpeg">
+<h4>Shri Santosh Bharbhare</h4>
+<p>Skilled Casual Labourer</p>
+<p>Support staff.</p>
+<p>Phone No:&nbsp;4024</p>
+</div>
+<div class="staff-card">
+<img src="img/Ramani Nair.jpeg">
+<h4>Ms. Ramani Nair</h4>
+<p>Multi-skilled Assistant B</p>
+<p>Dealing with Gr. B & C Technical Cadre</p>
+<p>Phone No:&nbsp;6010</p>
+<p>E-Mail: ramani.nair@iitb.ac.in</p>
+</div>
+<div class="staff-card">
+<img src="img/Ruchita R. Gawali.jpeg">
+<h4>Ms. Ruchita R. Gawali</h4>
+<p>Temporary Administrative Assistant</p>
+<p> 20003429@iitb.ac.in</p>
+<p>Phone No:&nbsp;4024</p>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+© 2026 Office Staff Portal | Designed for Office Administration
+</footer>
+</body>
+</html>
